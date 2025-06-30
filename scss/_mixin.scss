@@ -1,0 +1,15 @@
+@mixin progress($poin) {
+  position: relative;
+  width: $poin;
+  border-radius: 50px;
+  height: 5px;
+  background-color: $primary-color;
+}
+
+@mixin circular-progress($poin) {
+  $progress: $poin * 3.6;
+  position: relative;
+  background: conic-gradient($primary-color #{$progress}deg, #000 0deg);
+  border-radius: 50%;
+}
+
