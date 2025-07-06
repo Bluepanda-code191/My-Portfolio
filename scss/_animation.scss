@@ -1,10 +1,10 @@
 @mixin animation($x, $y) {
   opacity: 0;
-  transform: translate($x,$y);
+  transform: translate($x, $y);
   transition: all 1s ease;
 }
 
-@mixin delay($time){
+@mixin delay($time) {
   transition-delay: $time;
 }
 
@@ -24,50 +24,49 @@
   @include animation(50px, 0);
 }
 
-
 .fade-down.show,
 .fade-up.show,
 .fade-right.show,
 .fade-left.show {
   opacity: 1;
-  transform: translate(0,0);
+  transform: translate(0, 0);
 }
 
-.zoom-in{
+.zoom-in {
   opacity: 0;
   transform: scale(0);
   transition: all 1s ease;
 }
 
-.zoom-in.show{
+.zoom-in.show {
   opacity: 1;
   transform: scale(1);
 }
 
-.delay-100{
-  @include delay(0.1s)
+.delay-100 {
+  @include delay(0.1s);
 }
 
-.delay-200{
-  @include delay(0.2s)
+.delay-200 {
+  @include delay(0.2s);
 }
 
-.delay-300{
-  @include delay(0.3s)
+.delay-300 {
+  @include delay(0.3s);
 }
 
-.delay-400{
-  @include delay(0.4s)
+.delay-400 {
+  @include delay(0.4s);
 }
 
-.delay-500{
-  @include delay(0.5s)
+.delay-500 {
+  @include delay(0.5s);
 }
 
-.delay-600{
-  @include delay(0.6s)
+.delay-600 {
+  @include delay(0.6s);
 }
 
-.delay-800{
-  @include delay(0.8s)
+.delay-800 {
+  @include delay(0.8s);
 }

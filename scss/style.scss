@@ -26,6 +26,7 @@ body {
 .container {
   width: 80%;
   margin-inline: auto;
+  overflow-x: hidden;
 }
 
 .ul {
@@ -265,7 +266,7 @@ button {
       }
     }
 
-    .home-image-wrapper{
+    .home-image-wrapper {
       width: 35%;
     }
 
@@ -306,7 +307,7 @@ button {
   justify-content: space-between;
   align-items: center;
 
-  .about-image-wrapper{
+  .about-image-wrapper {
     width: 40%;
   }
 
@@ -378,7 +379,7 @@ button {
     flex-wrap: wrap;
     gap: 20px;
 
-    .service-wrapper{
+    .service-wrapper {
       width: 32%;
       height: 250px;
     }
@@ -393,7 +394,7 @@ button {
       border-radius: 12px;
       box-shadow: 0 0 20px $primary-color;
       transition: all 0.5s ease;
-      width:  100%;
+      width: 100%;
       height: 100%;
 
       &:hover {
@@ -626,10 +627,10 @@ button {
         padding: 20px;
         background: linear-gradient(
           to top,
-          rgba(0, 94, 255, 0.4),
+          rgba(0, 195, 255,0.4),
           rgba(0, 94, 255, 0)
         );
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(15px);
         border-radius: 8px;
         position: absolute;
         bottom: 0;
@@ -710,18 +711,17 @@ button {
       border: 1px solid $primary-color;
     }
 
-    .button-message{
+    .button-message {
       display: flex;
       justify-content: center;
 
-      .button{
-      display: inline-block;
-      font-size: 20px;
-      padding: 10px 25px;
-      border-radius: 50px;
+      .button {
+        display: inline-block;
+        font-size: 20px;
+        padding: 10px 25px;
+        border-radius: 50px;
+      }
     }
-    }
-    
   }
 }
 
@@ -731,27 +731,27 @@ button {
   background-color: #0c283b;
 }
 
-.box-footer{
+.box-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  .description{
+  .description {
     font-size: 14px;
     font-weight: 600;
   }
 
-  a{
+  a {
     background-color: $primary-color;
     color: $bg-color;
     padding: 8px;
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     box-shadow: 0 0 5px $primary-color;
 
-    &:hover{
+    &:hover {
       scale: 1.1;
     }
   }
